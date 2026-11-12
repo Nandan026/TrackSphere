@@ -1,0 +1,37 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Database dumps / schema (keep local only — not pushed to GitHub)
+*.sql
+/database/*.sql
+tracksphere_schema.sql
+
+# Dependencies
+/vendor/
+
+# Writable / runtime
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+/writable/debugbar/*
+!/writable/**/index.html
+!/writable/**/.htaccess
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+/build/
+/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# Composer phar
+composer.phar
